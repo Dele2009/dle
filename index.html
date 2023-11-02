@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Lobster+Two:wght@700&family=Nosifer&display=swap"rel="stylesheet">
+    <style>
+        body {
+            background-image: url(bAC.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            animation: body 15s ease-in-out 1s infinite alternate;
+        }
+
+        @keyframes body {
+            0% {
+                background-image: url(bAC.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            50% {
+                background-image: url(767046-beautiful-dice-wallpaper-1920x1200-for-phone.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            100% {
+                background-image: url(bac2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        }
+        .navb {
+            /* background: rgba(12, 56, 101, 255); */
+            /* background-image: url(dt.jpg); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0px 0px 10px 0px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 5;
+            background: rgba(56, 10, 56, 0.915);
+
+
+
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+            margin: 0px 0px 0px 20px;
+            width: fit-content;
+        }
+
+        .div {
+            width: 70px;
+            height: 50px;
+            margin: 0px 10px 13px 0px;
+
+
+        }
+
+        .max {
+            text-decoration: none;
+            color: white;
+            /* text-shadow:; */
+        }
+
+        .mew {
+
+            width: fit-content;
+            display: flex;
+            align-items: center;
+
+
+
+        }
+
+
+
+
+        .yu {
+            width: 100%;
+            margin: 0px 0px 0px 0px;
+            border-radius: 40px;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: 'Lobster Two', sans-serif;
+            text-transform: uppercase;
+            width: fit-content;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .navul {
+            padding: 0px;
+            list-style: none;
+            display: flex;
+            width: fit-content;
+
+
+
+        }
+
+        .navul .navelm {
+            margin: 0px 10px;
+
+
+            width: fit-content;
+
+        }
+
+        .navelm:hover {
+            background: rgba(31, 2, 31, 0.547);
+            border-radius: 10px;
+            padding: 5px 12px;
+            text-align: center;
+            box-shadow: 7px 7px 2px rgba(0, 0, 0, 0.411);
+        }
+
+        .my {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+
+        .div2 {
+            width: fit-content;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+
+
+
+        }
+
+        .but {
+            margin: 0;
+            padding: 15px 25px;
+            width: fit-content;
+            font-size: 20px;
+            font-weight: 200;
+            border-radius: 10px;
+            border: none;
+            /* background: rgba(72, 208, 196, 255); */
+            background-image: url(download.jfif);
+            color: white;
+            display: flex;
+        }
+        .mv {
+            width: fit-content;
+            text-align: center;
+            position: relative;
+            margin: 0px 50px 0px 50px;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        .navel {
+            background: rgb(15, 4, 15);
+            padding: 5px 15px;
+            border-radius: 50px;
+        }
+
+        .fa-arrow-down {
+            font-size: 20px;
+        }
+
+
+        .drop {
+            background: rgba(128, 0, 128, 0.696);
+            width: fit-content;
+            list-style: none;
+            padding: 0px;
+            display: none;
+            margin: 0;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .drop .li {
+
+            padding: 10px 25px;
+            width: fit-content;
+            text-align: center;
+
+        }
+
+        .drop li:hover {
+            background: rgba(128, 0, 128, 0.852);
+            width: fit-content;
+        }
+
+        .mv:hover .drop {
+            display: block;
+            position: absolute;
+            top: 35px;
+            left: -35px;
+        }
+
+
+        .mike {
+            border: 40px ridge black;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        
+
+        table td {
+            /* background: red; */
+            padding: 30px 30px;
+        }
+
+        .mike tr:nth-child(odd) td:nth-child(odd) {
+            background: white;
+            box-shadow: inset 0px 0px 9px black;
+        }
+
+        .mike tr:nth-child(odd) td:nth-child(even) {
+            background: brown;
+            box-shadow: inset 0px 0px 9px black;
+        }
+
+        .mike tr:nth-child(even) td:nth-child(odd) {
+            background: brown;
+            box-shadow: inset 0px 0px 9px black;
+        }
+
+        .mike tr:nth-child(even) td:nth-child(even) {
+            background: white;
+            box-shadow: inset 0px 0px 9px black;
+        }
+
+        .mike tr:nth-child(1) td:nth-child(1) {
+            background: red;
+        }
+
+        .mike tr:nth-child(2) td:nth-child(2) {
+            background: red;
+        }
+
+        .mike tr:nth-child(3) td:nth-child(3) {
+            background: red;
+        }
+
+        .mike tr:nth-child(4) td:nth-child(4) {
+            background: red;
+        }
+
+        .mike tr:nth-child(5) td:nth-child(5) {
+            background: red;
+        }
+
+        .mike tr:nth-child(6) td:nth-child(6) {
+            background: red;
+        }
+
+        .mike tr:nth-child(7) td:nth-child(7) {
+            background: red;
+        }
+
+        .mike tr:nth-child(8) td:nth-child(8) {
+            background: red;
+        }
+
+        .mike tr:nth-child(9) td:nth-child(9) {
+            background: red;
+        }
+
+        .mike tr:nth-child(10) td:nth-child(10) {
+            background: red;
+        }
+
+
+
+        .we {
+            padding: 100px;
+            background: none;
+        }
+
+
+
+
+        /* ludo game */
+
+        .oga {
+            background: black;
+            width: 70%;
+            border: 25px ridge black;
+            display: block;
+            justify-content: flex-end;
+            margin: auto;
+
+
+        }
+
+        /* .oga table {} */
+
+        .oga td {
+            padding: 34.2px 34.2px;
+            background: white;
+
+        }
+
+
+        /* boss */
+        .boss {
+            display: flex;
+
+        }
+
+        .two {
+            width: 100%;
+            /* height: ; */
+            background: red;
+        }
+
+        .three {
+            width: 100%;
+            /* height: ; */
+            background: green;
+        }
+
+        /* boss2 */
+        .boss2 {
+            display: flex;
+            margin: 0px auto;
+        }
+
+        .mid {
+            /* background: purple; */
+            width: 150%;
+            height: 90px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+
+        /* boss3 */
+        .boss3 {
+            display: flex;
+            margin: 0px auto;
+        }
+
+        .four {
+            width: 100%;
+            /* height: ; */
+            background: blue;
+        }
+
+        .five {
+            width: 100%;
+            /* height: ; */
+            background: yellow;
+        }
+
+
+        /* TABLES */
+        .blue {
+            margin: -2.4px 0px 0px 0px;
+        }
+
+        /* .green */
+        .green tr:nth-child(2) td:nth-child(2) {
+            background: green;
+        }
+
+        .green tr:nth-child(2) td:nth-child(3) {
+            background: green;
+        }
+
+        .green tr:nth-child(3) td:nth-child(2) {
+            background: green;
+        }
+
+        .green tr:nth-child(4) td:nth-child(2) {
+            background: green;
+        }
+
+        .green tr:nth-child(5) td:nth-child(2) {
+            background: green;
+        }
+
+        .green tr:nth-child(6) td:nth-child(2) {
+            background: green;
+        }
+
+        /* .red */
+        .red tr:nth-child(1) td:nth-child(2) {
+            background: red;
+        }
+
+        .red tr:nth-child(2) td:nth-child(2) {
+            background: red;
+        }
+
+        .red tr:nth-child(2) td:nth-child(3) {
+            background: red;
+        }
+
+        .red tr:nth-child(2) td:nth-child(4) {
+            background: red;
+        }
+
+        .red tr:nth-child(2) td:nth-child(5) {
+            background: red;
+        }
+
+        .red tr:nth-child(2) td:nth-child(6) {
+            background: red;
+        }
+
+        /* yellow */
+        .yellow tr:nth-child(3) td:nth-child(5) {
+            background: yellow;
+        }
+
+        .yellow tr:nth-child(2) td:nth-child(5) {
+            background: yellow;
+        }
+
+        .yellow tr:nth-child(2) td:nth-child(4) {
+            background: yellow;
+        }
+
+        .yellow tr:nth-child(2) td:nth-child(3) {
+            background: yellow;
+        }
+
+        .yellow tr:nth-child(2) td:nth-child(2) {
+            background: yellow;
+        }
+
+        .yellow tr:nth-child(2) td:nth-child(1) {
+            background: yellow;
+        }
+
+        /* blue */
+        .blue tr:nth-child(6) td:nth-child(1) {
+            background: blue;
+        }
+
+        .blue tr:nth-child(6) td:nth-child(2) {
+            background: blue;
+        }
+
+        .blue tr:nth-child(5) td:nth-child(2) {
+            background: blue;
+        }
+
+        .blue tr:nth-child(4) td:nth-child(2) {
+            background: blue;
+        }
+
+        .blue tr:nth-child(3) td:nth-child(2) {
+            background: blue;
+        }
+
+        .blue tr:nth-child(2) td:nth-child(2) {
+            background: blue;
+        }
+
+        .blue tr:nth-child(1) td:nth-child(2) {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav class="navb">
+        <div class="head">
+            <div class="div">
+                <img src="logo.jpg" alt="" class="yu">
+            </div>
+            <a href="" class="max">
+                <h1>sci-art</h1>
+            </a>
+        </div>
+        <div class="mew">
+            <ul class="navul">
+                <li class="navelm"><a href="index.html" class="my">home</a></li>
+                <li class="navelm"><a href="bizg.html" class="my">about</a></li>
+                <li class="navelm"><a href="fcmb.html" class="my">services</a></li>
+                <li class="navelm"><a href="d'scodes.html" class="my">contact us</a></li>
+                <li class="navelm"><a href="bridge.html" class="my">products</a></li>
+                <li class="navelm"><a href="pixelgrade.html" class="my">our mission</a></li>
+                <li class="navelm"><a href="Whogohost.html" class="my">feedback</a></li>
+            </ul>
+            <div class="div2">
+                <button class="but">
+                    SIGN UP
+                </button>
+                <div class="mv">
+                    <li class="navel"><a href="index.html" class="my"> <i class="fa-solid fa-arrow-down"></i></a></li>
+                    <ul class="drop">
+
+                        <li class="li bo"><a href="bizg.html" class="my"> about</a></li>
+                        <li class="li"><a href="fcmb.html" class="my">services</a></li>
+                        <li class="li"><a href="d'scodes.html" class="my">contact us</a></li>
+                        <li class="li"><a href="bridge.html" class="my">products</a></li>
+                        <li class="li"><a href="pixelgrade.html" class="my">our mission</a></li>
+                        <li class="li"><a href="Whogohost.html" class="my">feedback</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </div>
+    </nav> -->
+    <table class="mike">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+
+
+
+    <div class="we">
+
+    </div>
+
+
+
+
+    <div class="oga">
+        <div class="boss">
+            <div class="two">
+                <img src="" alt="">
+            </div>
+            <div>
+                <table class="green">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="three">
+                <img src="" alt="">
+            </div>
+        </div>
+
+
+        <div class="boss2">
+
+            <table class="red">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="mid">
+                <img src="mid4.jfif" alt="">
+            </div>
+            <table class="yellow">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="boss3">
+            <div class="four">
+                <img src="" alt="">
+            </div>
+            <div>
+                <table class="blue">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="five">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
